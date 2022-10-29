@@ -1,4 +1,4 @@
-.section.team {
+.section--team {
   background-color: var(--gray-background);
 }
 
@@ -9,7 +9,7 @@
 
 /* calc((100% - кол-во маржинов * значение маржинов) / кол-во элементов в строке) */
 
-.team-list .card {
+.card {
   width: calc((100% - 90px) / 4);
 
   background-color: var(--primary-white-color);
@@ -18,13 +18,13 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .describe {
+.card__describe {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-list .title,
-.team-list .job {
+.card__title,
+.card__job {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -32,7 +32,7 @@
   letter-spacing: 0.03em;
 }
 
-.team-list .title {
+.card__title {
   margin-bottom: 10px;
   font-weight: 500;
   color: var(--secondary-black-color);

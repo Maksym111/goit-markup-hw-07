@@ -59,6 +59,8 @@
 .info-nav {
   display: flex;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .info-nav__item:not(:first-child) {

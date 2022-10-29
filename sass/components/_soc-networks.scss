@@ -4,11 +4,11 @@
   justify-content: center;
 }
 
-.soc-networks .item:not(:last-child) {
+.soc-networks__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.soc-icon-link {
+.soc-networks__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,12 +21,12 @@
   transition: color var(--transition-standart), background-color var(--transition-standart);
 }
 
-.soc-networks .icon {
+.soc-networks__icon {
   fill: currentColor;
 }
 
-.soc-icon-link:hover,
-.soc-icon-link:focus {
+.soc-networks__link:hover,
+.soc-networks__link:focus {
   background-color: var(--accent-blue-color);
   color: var(--primary-white-color);
 }

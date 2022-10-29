@@ -1,13 +1,13 @@
-.features-list {
+.features {
   display: flex;
   gap: 30px;
 }
 
-.features-list .item {
+.features__item {
   width: calc((100% - 90px) / 4);
 }
 
-.features-list .item-image {
+.features__image-wrapper {
   display: block;
   padding: 25px 100px;
   text-align: center;
@@ -17,7 +17,7 @@
   border-radius: 4px;
 }
 
-.features-list .title {
+.features__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -29,7 +29,7 @@
   color: var(--secondary-black-color);
 }
 
-.features-list .describe {
+.features__describe {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

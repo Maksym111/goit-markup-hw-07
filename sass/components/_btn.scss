@@ -1,0 +1,105 @@
+.button {
+  font-family: inherit;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-blue-color);
+  transition: background-color var(--transition-standart);
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.button-list .item {
+  margin-right: 8px;
+}
+
+.button-list .item:last-child {
+  margin-right: 0;
+}
+
+.button-list .button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background-color: var(--gray-background);
+  color: var(--secondary-black-color);
+
+  transition: background-color var(--transition-standart), color var(--transition-standart),
+    box-shadow var(--transition-standart);
+}
+
+.button-list .button:hover,
+.button-list .button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-blue-color);
+
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
+}
+
+/* -----MODAL-BUTTON----- */
+
+.modal-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 10px 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-blue-color);
+  box-shadow: 0px 4px 4px 0px #00000026;
+
+  transition: background-color var(--transition-standart);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--btn-background-color);
+}
+
+/* ----------FOOTER-BUTTON---------- */
+
+.footer-subscribe-button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+
+  padding: 10px 28px;
+  background-color: var(--accent-blue-color);
+  box-shadow: 0px 4px 4px 0px #00000026;
+
+  transition: background-color var(--transition-standart);
+}
+
+.footer-icon-plane {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: var(--btn-background-color);
+}

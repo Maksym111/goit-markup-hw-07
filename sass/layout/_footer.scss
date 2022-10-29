@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-background);
+}
+
+.footer .column-list {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .column:not(:last-child) {
+  margin-right: 70px;
+}

@@ -1,0 +1,32 @@
+.soc-networks {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.soc-networks .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+
+  color: var(--icon-soc-networks-color);
+  transition: color var(--transition-standart), background-color var(--transition-standart);
+}
+
+.soc-networks .icon {
+  fill: currentColor;
+}
+
+.soc-icon-link:hover,
+.soc-icon-link:focus {
+  background-color: var(--accent-blue-color);
+  color: var(--primary-white-color);
+}

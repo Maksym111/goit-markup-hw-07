@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="./css/modern-normalize.css" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -74,65 +74,66 @@
               </svg>
             </button>
 
-            <form action="" class="modal-form" autocomplete="off">
-              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form action="" class="form" autocomplete="off">
+              <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
 
-              <label class="modal-label" name="name">
-                <div class="label">Ім'я</div>
+              <label class="label" name="name">
+                <div class="label__name">Ім'я</div>
 
-                <div class="wrapper-label">
-                  <input type="text" class="modal-input" name="name" required />
-                  <svg class="modal-input-icon" width="18px" height="18px">
+                <div class="input-wrapper">
+                  <input type="text" class="input" name="name" required />
+                  <svg class="input__icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-person"></use>
                   </svg>
                 </div>
               </label>
 
-              <label class="modal-label" name="telephone">
-                <div class="label">Телефон</div>
+              <label class="label" name="telephone">
+                <div class="label__name">Телефон</div>
 
-                <div class="wrapper-label">
-                  <input type="tel" class="modal-input" name="telephone number" required />
-                  <svg class="modal-input-icon" width="18px" height="18px">
+                <div class="input-wrapper">
+                  <input type="tel" class="input" name="telephone number" required />
+                  <svg class="input__icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </div>
               </label>
 
-              <label class="modal-label" name="email">
-                <div class="label">Пошта</div>
+              <label class="label" name="email">
+                <div class="label__name">Пошта</div>
 
-                <div class="wrapper-label">
-                  <input type="email" class="modal-input" name="email" required />
-                  <svg class="modal-input-icon" width="18px" height="18px">
+                <div class="input-wrapper">
+                  <input type="email" class="input" name="email" required />
+                  <svg class="input__icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-email-envelope"></use>
                   </svg>
                 </div>
               </label>
 
-              <label class="modal-label" name="comment">
-                <div class="label">Коментар</div>
+              <label class="label" name="comment">
+                <div class="label__name">Коментар</div>
 
-                <div class="wrapper-label">
-                  <textarea
-                    class="modal-textarea"
-                    placeholder="Введіть текст"
-                    name="comment"
-                  ></textarea>
+                <div class="input-wrapper">
+                  <textarea class="textarea" placeholder="Введіть текст" name="comment"></textarea>
                 </div>
               </label>
 
-              <div class="modal-checkbox-form">
-                <label class="label-checkbox" name="check-agree">
-                  <input type="checkbox" class="modal-checkbox" name="agree link terms" required />
-                  <span class="icon-check">
+              <div class="checkbox-wrapper">
+                <label class="checkbox-wrapper__label" name="check-agree">
+                  <input
+                    type="checkbox"
+                    class="checkbox-wrapper__checkbox"
+                    name="agree link terms"
+                    required
+                  />
+                  <span class="checkbox-wrapper__symbol">
                     <svg class="icon" width="16px" height="15px">
                       <use href="./images/icons.svg#icon-check"></use>
                     </svg>
                   </span>
                   Погоджуюся з розсилкою та приймаю</label
                 >
-                <a href="" class="link-terms">Умови договору</a>
+                <a href="" class="checkbox-wrapper__link">Умови договору</a>
               </div>
 
               <button class="modal-button button" type="submit">Відправити</button>

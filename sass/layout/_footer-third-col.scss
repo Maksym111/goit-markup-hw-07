@@ -1,13 +1,12 @@
-.footer-third-column {
+.footer__column-third {
   width: 570px;
-  /* margin-left: auto; */
 }
 
-.footer-subscribe {
+.subscribe-form {
   display: flex;
 }
 
-.footer-input {
+.subscribe-form__input {
   display: inline-block;
   width: 100%;
   padding: 15px 16px;
@@ -25,8 +24,8 @@
   transition: border-color var(--transition-standart);
 }
 
-.footer-input:focus-visible,
-.footer-input:focus {
+.subscribe-form__input:focus-visible,
+.subscribe-form__input:focus {
   outline: none;
   border-color: var(--accent-blue-color);
 }

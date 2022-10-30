@@ -1,9 +1,9 @@
-.examples-list .top-board {
+.porfolio__top-part {
   position: relative;
   overflow: hidden;
 }
 
-.top-board .card-backdrop {
+.porfolio__backdrop {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -12,11 +12,11 @@
   height: 100%;
   background-color: #2196f3e5;
 
-  transform: translateY(100%);
+  transform: translateY(100.3%);
   transition: transform var(--transition-standart);
 }
 
-.card-backdrop .text {
+.porfolio__text {
   padding: 63px 24px;
 
   font-size: 18px;
@@ -26,7 +26,7 @@
   color: var(--primary-white-color);
 }
 
-.card-link:hover .card-backdrop,
-.card-link:focus .card-backdrop {
+.porfolio__link:hover .porfolio__backdrop,
+.porfolio__link:focus .porfolio__backdrop {
   transform: translateY(0);
 }

@@ -1,16 +1,12 @@
-.section-clients .section-title {
-  margin-bottom: 50px;
-}
-
-.section-clients .list-item {
+.clients-list {
   display: flex;
 }
 
-.section-clients .item:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-clients .clients-link {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +21,12 @@
   transition: border-color var(--transition-standart), color var(--transition-standart);
 }
 
-.section-clients .image {
+.clients-list__image {
   fill: currentColor;
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   border-color: var(--accent-blue-color);
   color: var(--accent-blue-color);
 }

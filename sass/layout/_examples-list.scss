@@ -3,28 +3,28 @@
   flex-wrap: wrap;
 }
 
-.examples-list .item {
+.porfolio {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.examples-list .item:nth-child(3n) {
+.porfolio:nth-child(3n) {
   margin-right: 0;
 }
 
-.examples-list .item:nth-last-child(-n + 3) {
+.porfolio:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.examples-list .card-link {
+.porfolio__link {
   display: block;
   color: var(--primary-text-color);
 
   transition: box-shadow var(--transition-standart);
 }
 
-.examples-list .card-link:hover,
-.examples-list .card-link:focus {
+.porfolio__link:hover,
+.porfolio__link:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
 }

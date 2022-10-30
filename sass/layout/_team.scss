@@ -9,7 +9,7 @@
 
 /* calc((100% - кол-во маржинов * значение маржинов) / кол-во элементов в строке) */
 
-.card {
+.employee {
   width: calc((100% - 90px) / 4);
 
   background-color: var(--primary-white-color);
@@ -18,13 +18,13 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.card__describe {
+.employee__describe {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.card__title,
-.card__job {
+.employee__title,
+.employee__job {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -32,7 +32,7 @@
   letter-spacing: 0.03em;
 }
 
-.card__title {
+.employee__title {
   margin-bottom: 10px;
   font-weight: 500;
   color: var(--secondary-black-color);

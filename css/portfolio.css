@@ -127,15 +127,15 @@ main {
   margin-bottom: 50px;
 }
 
-.button-list .item {
+.button-list__item {
   margin-right: 8px;
 }
 
-.button-list .item:last-child {
+.button-list__item:last-child {
   margin-right: 0;
 }
 
-.button-list .button {
+.button-list__button {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -147,8 +147,8 @@ main {
   transition: background-color var(--transition-standart), color var(--transition-standart), box-shadow var(--transition-standart);
 }
 
-.button-list .button:hover,
-.button-list .button:focus {
+.button-list__button:hover,
+.button-list__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-blue-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275), 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725), 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
@@ -176,7 +176,7 @@ main {
 }
 
 /* ----------FOOTER-BUTTON---------- */
-.footer-subscribe-button {
+.subscribe-form__button {
   display: flex;
   align-items: center;
   width: 200px;
@@ -193,14 +193,14 @@ main {
   transition: background-color var(--transition-standart);
 }
 
-.footer-icon-plane {
+.button__icon-plane {
   display: flex;
   align-items: center;
   margin-left: 10px;
 }
 
-.footer-subscribe-button:hover,
-.footer-subscribe-button:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
   background-color: var(--btn-background-color);
 }
 
@@ -224,6 +224,11 @@ main {
 .logo__word-footer {
   padding: 0;
   color: var(--primary-white-color);
+}
+
+.logo--footer {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .soc-networks {
@@ -369,48 +374,48 @@ main {
   flex-wrap: wrap;
 }
 
-.examples-list .item {
+.porfolio {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.examples-list .item:nth-child(3n) {
+.porfolio:nth-child(3n) {
   margin-right: 0;
 }
 
-.examples-list .item:nth-last-child(-n+3) {
+.porfolio:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
-.examples-list .card-link {
+.porfolio__link {
   display: block;
   color: var(--primary-text-color);
   transition: box-shadow var(--transition-standart);
 }
 
-.examples-list .card-link:hover,
-.examples-list .card-link:focus {
+.porfolio__link:hover,
+.porfolio__link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137), 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
 }
 
-.examples-list .top-board {
+.porfolio__top-part {
   position: relative;
   overflow: hidden;
 }
 
-.top-board .card-backdrop {
+.porfolio__backdrop {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.8980392157);
-  transform: translateY(100%);
+  transform: translateY(100.3%);
   transition: transform var(--transition-standart);
 }
 
-.card-backdrop .text {
+.porfolio__text {
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
@@ -418,18 +423,18 @@ main {
   color: var(--primary-white-color);
 }
 
-.card-link:hover .card-backdrop,
-.card-link:focus .card-backdrop {
+.porfolio__link:hover .porfolio__backdrop,
+.porfolio__link:focus .porfolio__backdrop {
   transform: translateY(0);
 }
 
-.examples-list .bottom-board {
+.porfolio__bottom-part {
   padding: 20px 24px;
   border: 1px solid var(--card-border-background);
   border-top: none;
 }
 
-.examples-list .title {
+.porfolio__title {
   margin-bottom: 4px;
   color: var(--secondary-black-color);
   font-weight: 700;
@@ -438,7 +443,7 @@ main {
   letter-spacing: 0.06em;
 }
 
-.examples-list .type {
+.porfolio__type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -450,51 +455,46 @@ main {
   background-color: var(--dark-background);
 }
 
-.footer .column-list {
+.container--column-list {
   display: flex;
   align-items: baseline;
 }
 
-.footer .column:not(:last-child) {
+.column:not(:last-child) {
   margin-right: 70px;
-}
-
-.logo--footer {
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .contact-address {
   font-style: normal;
 }
 
-.address-list .link {
+.address-list__link {
   color: var(--gray-opacity-color);
   line-height: 1.71;
   transition: color var(--transition-standart);
 }
 
-.address-list .link[href*=maps] {
+.address-list__link[href*=maps] {
   color: var(--primary-white-color);
   transition: color var(--transition-standart);
 }
 
-.address-list .link:hover,
-.address-list .link:focus {
+.address-list__link:hover,
+.address-list__link:focus {
   color: var(--accent-blue-color);
 }
 
-.address-list .item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-top: 0;
   margin-bottom: 9px;
 }
 
-.footer .footer-second-column.column {
+.footer__column-second {
   margin-right: auto;
 }
 
-.footer-second-column .title,
-.footer-third-column .title {
+.column__title,
+.column__title {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -502,15 +502,15 @@ main {
   color: var(--primary-white-color);
 }
 
-.footer-second-column .list-item {
+.join-list {
   display: flex;
 }
 
-.footer-second-column .item:not(:last-child) {
+.join-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-second-column .link-icon {
+.join-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,25 +522,24 @@ main {
   transition: background-color var(--transition-standart);
 }
 
-.footer-second-column .icon {
+.join-list__icon {
   fill: currentColor;
 }
 
-.footer-second-column .link-icon:hover,
-.footer-second-column .link-icon:focus {
+.join-list__link:hover,
+.join-list__link:focus {
   background-color: var(--accent-blue-color);
 }
 
-.footer-third-column {
+.footer__column-third {
   width: 570px;
-  /* margin-left: auto; */
 }
 
-.footer-subscribe {
+.subscribe-form {
   display: flex;
 }
 
-.footer-input {
+.subscribe-form__input {
   display: inline-block;
   width: 100%;
   padding: 15px 16px;
@@ -555,8 +554,8 @@ main {
   transition: border-color var(--transition-standart);
 }
 
-.footer-input:focus-visible,
-.footer-input:focus {
+.subscribe-form__input:focus-visible,
+.subscribe-form__input:focus {
   outline: none;
   border-color: var(--accent-blue-color);
 }/*# sourceMappingURL=portfolio.css.map */

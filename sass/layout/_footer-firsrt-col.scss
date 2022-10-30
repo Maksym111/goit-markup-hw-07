@@ -1,31 +1,26 @@
-.logo--footer {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 .contact-address {
   font-style: normal;
 }
 
-.address-list .link {
+.address-list__link {
   color: var(--gray-opacity-color);
   line-height: 1.71;
 
   transition: color var(--transition-standart);
 }
 
-.address-list .link[href*='maps'] {
+.address-list__link[href*='maps'] {
   color: var(--primary-white-color);
 
   transition: color var(--transition-standart);
 }
 
-.address-list .link:hover,
-.address-list .link:focus {
+.address-list__link:hover,
+.address-list__link:focus {
   color: var(--accent-blue-color);
 }
 
-.address-list .item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-top: 0;
   margin-bottom: 9px;
 }

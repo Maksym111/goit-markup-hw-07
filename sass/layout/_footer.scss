@@ -4,11 +4,11 @@
   background-color: var(--dark-background);
 }
 
-.footer .column-list {
+.container--column-list {
   display: flex;
   align-items: baseline;
 }
 
-.footer .column:not(:last-child) {
+.column:not(:last-child) {
   margin-right: 70px;
 }

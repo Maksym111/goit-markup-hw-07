@@ -13,15 +13,15 @@
   margin-bottom: 50px;
 }
 
-.button-list .item {
+.button-list__item {
   margin-right: 8px;
 }
 
-.button-list .item:last-child {
+.button-list__item:last-child {
   margin-right: 0;
 }
 
-.button-list .button {
+.button-list__button {
   padding: 6px 22px;
 
   font-weight: 500;
@@ -37,8 +37,8 @@
     box-shadow var(--transition-standart);
 }
 
-.button-list .button:hover,
-.button-list .button:focus {
+.button-list__button:hover,
+.button-list__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-blue-color);
 
@@ -72,7 +72,7 @@
 
 /* ----------FOOTER-BUTTON---------- */
 
-.footer-subscribe-button {
+.subscribe-form__button {
   display: flex;
   align-items: center;
   width: 200px;
@@ -93,13 +93,13 @@
   transition: background-color var(--transition-standart);
 }
 
-.footer-icon-plane {
+.button__icon-plane {
   display: flex;
   align-items: center;
   margin-left: 10px;
 }
 
-.footer-subscribe-button:hover,
-.footer-subscribe-button:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
   background-color: var(--btn-background-color);
 }

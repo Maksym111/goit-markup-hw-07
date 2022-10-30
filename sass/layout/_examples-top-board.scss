@@ -14,19 +14,17 @@
 
   transform: translateY(100.3%);
   transition: transform var(--transition-standart);
+
+  .porfolio__link:hover &,
+  .porfolio__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .porfolio__text {
   padding: 63px 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(null, 18px, 1.56, 0.03em);
 
   color: var(--primary-white-color);
-}
-
-.porfolio__link:hover .porfolio__backdrop,
-.porfolio__link:focus .porfolio__backdrop {
-  transform: translateY(0);
 }

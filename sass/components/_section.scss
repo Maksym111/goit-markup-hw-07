@@ -1,20 +1,18 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.section--without-botpadding {
-  padding-bottom: 0;
-}
+  &--without-botpadding {
+    padding-bottom: 0;
+  }
 
-.section__title {
-  margin-bottom: 50px;
+  &__title {
+    margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+    @include font(700, 36px, 1.16, 0.03em);
 
-  color: var(--secondary-black-color);
+    text-align: center;
+
+    color: var(--secondary-black-color);
+  }
 }

@@ -11,38 +11,34 @@
   justify-content: center;
 
   margin-bottom: 50px;
-}
 
-.button-list__item {
-  margin-right: 8px;
-}
+  &__item {
+    margin-right: 8px;
+  }
 
-.button-list__item:last-child {
-  margin-right: 0;
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .button-list__button {
   padding: 6px 22px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.62, 0.03em, center);
 
   background-color: var(--gray-background);
   color: var(--secondary-black-color);
 
   transition: background-color var(--transition-standart), color var(--transition-standart),
     box-shadow var(--transition-standart);
-}
 
-.button-list__button:hover,
-.button-list__button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-blue-color);
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-blue-color);
 
-  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
+  }
 }
 
 /* -----MODAL-BUTTON----- */
@@ -53,36 +49,28 @@
   width: 200px;
   padding: 10px 52px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em);
   color: var(--primary-white-color);
 
   background-color: var(--accent-blue-color);
   box-shadow: 0px 4px 4px 0px #00000026;
 
   transition: background-color var(--transition-standart);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-  background-color: var(--btn-background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-background-color);
+  }
 }
 
 /* ----------FOOTER-BUTTON---------- */
 
 .subscribe-form__button {
-  display: flex;
-  align-items: center;
+  @extend %align-center-elem;
   width: 200px;
   height: 100%;
 
-  text-align: left;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em, left);
 
   color: var(--primary-white-color);
 
@@ -91,15 +79,14 @@
   box-shadow: 0px 4px 4px 0px #00000026;
 
   transition: background-color var(--transition-standart);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-background-color);
+  }
 }
 
 .button__icon-plane {
-  display: flex;
-  align-items: center;
+  @extend %align-center-elem;
   margin-left: 10px;
-}
-
-.subscribe-form__button:hover,
-.subscribe-form__button:focus {
-  background-color: var(--btn-background-color);
 }

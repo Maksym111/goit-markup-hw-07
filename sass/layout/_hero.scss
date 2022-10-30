@@ -13,19 +13,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.hero__title {
-  width: 696px;
-  margin: 0 auto 30px;
+  &__title {
+    width: 696px;
+    margin: 0 auto 30px;
 
-  color: var(--primary-white-color);
+    color: var(--primary-white-color);
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+    @include font(900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
+  }
 }
 
 .hero__button {
@@ -33,13 +30,10 @@
   margin-right: auto;
   padding: 10px 32px;
 
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-}
+  @include font(700, 16px, 1.88, 0.06em);
 
-.hero__button:hover,
-.hero__button:focus {
-  background-color: var(--btn-background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-background-color);
+  }
 }

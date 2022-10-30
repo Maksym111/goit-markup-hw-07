@@ -4,24 +4,22 @@
 
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(700, 26px, 1.19, 0.03em);
+
   text-decoration: none;
-}
 
-.logo__word-header {
-  padding: 0;
-  color: var(--full-black-color);
-}
+  &__word-header {
+    padding: 0;
+    color: var(--full-black-color);
+  }
 
-.logo__word-footer {
-  padding: 0;
-  color: var(--primary-white-color);
-}
+  &__word-footer {
+    padding: 0;
+    color: var(--primary-white-color);
+  }
 
-.logo--footer {
-  margin-top: 0;
-  margin-bottom: 20px;
+  &--footer {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }

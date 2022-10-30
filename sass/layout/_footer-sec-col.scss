@@ -5,8 +5,7 @@
 .column__title,
 .column__title {
   margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
+  @include font(700, null, 1.16);
   text-transform: uppercase;
 
   color: var(--primary-white-color);
@@ -14,16 +13,18 @@
 
 .join-list {
   display: flex;
-}
 
-.join-list__item:not(:last-child) {
-  margin-right: 10px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .join-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-elem;
   padding: 12px;
   border: none;
   border-radius: 50%;
@@ -32,13 +33,9 @@
   color: var(--primary-white-color);
 
   transition: background-color var(--transition-standart);
-}
 
-.join-list__icon {
-  fill: currentColor;
-}
-
-.join-list__link:hover,
-.join-list__link:focus {
-  background-color: var(--accent-blue-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-blue-color);
+  }
 }

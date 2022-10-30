@@ -2,16 +2,18 @@
   display: flex;
   margin-top: 16px;
   justify-content: center;
-}
 
-.soc-networks__item:not(:last-child) {
-  margin-right: 10px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .soc-networks__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-elem;
   width: 44px;
   height: 44px;
   border: none;
@@ -19,14 +21,10 @@
 
   color: var(--icon-soc-networks-color);
   transition: color var(--transition-standart), background-color var(--transition-standart);
-}
 
-.soc-networks__icon {
-  fill: currentColor;
-}
-
-.soc-networks__link:hover,
-.soc-networks__link:focus {
-  background-color: var(--accent-blue-color);
-  color: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-blue-color);
+    color: var(--primary-white-color);
+  }
 }

@@ -7,17 +7,17 @@
   line-height: 1.71;
 
   transition: color var(--transition-standart);
-}
 
-.address-list__link[href*='maps'] {
-  color: var(--primary-white-color);
+  &[href*='maps'] {
+    color: var(--primary-white-color);
 
-  transition: color var(--transition-standart);
-}
+    transition: color var(--transition-standart);
+  }
 
-.address-list__link:hover,
-.address-list__link:focus {
-  color: var(--accent-blue-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-blue-color);
+  }
 }
 
 .address-list__item:not(:last-child) {
